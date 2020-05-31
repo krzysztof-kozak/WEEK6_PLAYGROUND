@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Dancing+Script&family=Lobster&family=Marck+Script&family=Montserrat&family=Open+Sans&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="normalize.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="index.js"></script>
+    <title>Tydzień 6 - Formularz</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="page-header">
+        Testujemy formularze
+      </h1>
+
+      <p class="display-paragraph">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+        quaerat, veniam illo repellat culpa magnam in molestias natus officia
+        error amet? Veritatis consequatur officiis assumenda adipisci atque
+        exercitationem quaerat quas! Dolor itaque ad inventore. Velit culpa,
+        ullam illo vitae quo voluptatum a porro blanditiis est sunt architecto
+        sequi cupiditate consectetur asperiores consequatur quibusdam facilis
+        maxime fugit suscipit. In, minima doloribus? Asperiores dolorum, ex
+        labore atque itaque id nobis, minus quae cum accusamus, tempora dolore.
+        Quis quidem corrupti, distinctio veniam at nihil enim, tempora iste
+        voluptatibus repudiandae minima, optio tenetur delectus? Vero quasi
+        dolorem minus quos eveniet recusandae fugit commodi expedita! Eaque hic
+        vel minus, ea assumenda molestiae quia tenetur libero saepe deleniti
+        repellat incidunt dolorum molestias accusamus! Temporibus, consequatur
+        nulla?
+      </p>
+
+      <form class="form" action="https://dev.cotenfrontend.pl" method="GET">
+        <fieldset class="form__section">
+          <legend class="form__legend">Wybierz kolor tła oraz ramkę</legend>
+          <p class="top-section-wrapper">
+            <label class="form__label form__label--color" for="background">
+              Kolor tła</label
+            >
+            <input
+              class="form__input form__input--color"
+              type="color"
+              name="background"
+              id="background"
+              value="#a52a2a"
+            />
+          </p>
+
+          <p class="top-section-wrapper">
+            <label class="form__label" for="border">Ramka</label>
+            <select
+              class="form__input form__input--select"
+              name="border"
+              id="border"
+            >
+              <option value="Border: 1">Czarna, 3px, zaokrląglona</option>
+              <option value="Border: 2">Czerwona, 5px, zaokrląglona</option>
+              <option value="Border: 3">Biała, 7px</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <fieldset class="form__section form__section--small">
+          <legend class="form__legend">Wybierz typ i rozmiar czcionki</legend>
+          <div class="group-wrapper">
+            <p class="mid-section-wrapper">
+              <label class="form__label">Bangers</label>
+              <input
+                class="form__input"
+                type="radio"
+                name="font"
+                id="Bangers"
+                value="'Bangers', cursive"
+              />
+            </p>
+
+            <p class="mid-section-wrapper">
+              <label class="form__label">Dancing Script</label>
+              <input
+                class="form__input"
+                type="radio"
+                name="font"
+                id="dancingScript"
+                value="'Dancing Script', cursive"
+              />
+            </p>
+
+            <p class="mid-section-wrapper">
+              <label class="form__label">Lobster</label>
+              <input
+                class="form__input"
+                type="radio"
+                name="font"
+                id="Lobster"
+                value="'Lobster', cursive"
+              />
+            </p>
+
+            <p class="mid-section-wrapper">
+              <label class="form__label">Montserrat</label>
+              <input
+                class="form__input"
+                type="radio"
+                name="font"
+                id="montserrat"
+                value="'Montserrat', sans-serif"
+              />
+            </p>
+
+            <p class="mid-section-wrapper">
+              <label class="form__label">Marck Script</label>
+              <input
+                class="form__input"
+                type="radio"
+                name="font"
+                id="marckScript"
+                value="'Marck Script', cursive"
+              />
+            </p>
+
+            <p class="mid-section-wrapper">
+              <label class="form__label">Roboto Mono</label>
+              <input
+                class="form__input form__label--special"
+                type="radio"
+                name="font"
+                id="robotoMono"
+                value="'Roboto Mono', monospace"
+              />
+            </p>
+          </div>
+
+          <div class="group-wrapper">
+            <p class="mid-section-wrapper">
+              <label class="form__label">Mała</label>
+              <input
+                class="form__input form__input--special"
+                type="radio"
+                name="font-size"
+                id="font-size-tiny"
+                value="0.5rem"
+              />
+            </p>
+
+            <p class="mid-section-wrapper">
+              <label class="form__label">Zwykła</label>
+              <input
+                class="form__input form__input--special"
+                type="radio"
+                name="font-size"
+                id="font-size-regular"
+                value="3rem"
+              />
+            </p>
+
+            <p class="mid-section-wrapper">
+              <label class="form__label">Duża</label>
+              <input
+                class="form__input"
+                type="radio"
+                name="font-size"
+                id="font-size-large"
+                value="3em"
+              />
+            </p>
+          </div>
+
+          <p class="mid-section-wrapper">
+            <label for="lineHeight" class="form__label"
+              >Większa interlinia</label
+            >
+            <input
+              id="lineHeight"
+              type="checkbox"
+              name="line-height"
+              value="2rem"
+              class="form__input"
+            />
+          </p>
+        </fieldset>
+
+        <fieldset class="form__section">
+          <legend class="form__legend">Tryb ciemny</legend>
+          <p class="bottom-section-wrapper">
+            <label for="darkmode" class="form__label">Włącz tryb ciemny</label>
+            <input
+              id="darkmode"
+              type="checkbox"
+              name="darkmode"
+              value="#000"
+              class="form__input"
+            />
+          </p>
+        </fieldset>
+
+        <p>
+          <input class="form__send-input" type="submit" value="Wyślij" />
+        </p>
+      </form>
+    </main>
+  </body>
+</html>

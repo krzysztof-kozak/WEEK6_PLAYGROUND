@@ -1,0 +1,154 @@
+/* settings */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fa8bff;
+  background-image: linear-gradient(
+    45deg,
+    #fa8bff 0%,
+    #2bd2ff 52%,
+    #2bff88 90%
+  );
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 1em;
+  margin: 1em;
+  font-family: sans-serif;
+}
+
+main:hover {
+  animation: box-shadow 1s forwards;
+}
+
+@keyframes box-shadow-main {
+  100% {
+    box-shadow-main: 0px 0px 9px 3px black;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+/* header */
+.page-header {
+  text-align: center;
+}
+
+.display-paragraph {
+  background-color: #a52a2a;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff94;
+  line-height: 1.4em;
+  text-align: justify;
+  border: 3px solid #fff;
+  border-radius: 3em;
+  padding: 1.5em;
+  max-width: 680px;
+}
+
+/* form */
+.form {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  border: 5px double #fff;
+  padding: 1em;
+  margin-top: 2em;
+  border-radius: 1em;
+  background: #ff69b4ab;
+}
+
+.form__section {
+  width: 100%;
+  max-width: 340px;
+  margin: 1em 0 1.5em 0;
+  border: 2px dashed #ff008be8;
+}
+
+.form__legend {
+  text-align: center;
+  font-size: 20px;
+  padding: 0px 5px;
+}
+
+.top-section-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.mid-section-wrapper {
+  display: flex;
+  border-bottom: 1px groove #000;
+  margin: 0.7em 0 0.7em;
+  background-color: azure;
+}
+
+.mid-section-wrapper:hover {
+  animation: box-shadow-wrapper 1s forwards;
+}
+
+@keyframes box-shadow-wrapper {
+  100% {
+    box-shadow: 2px 3px 5px 0px #3a5268f0;
+    transform: scale(1.05);
+  }
+}
+
+.bottom-section-wrapper {
+  margin: 0.7em 0 0.7em;
+  background-color: #2c3a3acc;
+  padding: 0.6em;
+  color: #020202;
+  border-radius: 0.5em;
+  border: 3px solid #4e0e0e;
+}
+
+.group-wrapper {
+  padding: 0 0 0.7em;
+}
+
+.form__label {
+  padding: 0.5em;
+  flex-basis: 40%;
+  text-align: end;
+}
+
+.form__label--color {
+  flex-basis: 27%;
+}
+
+.form__input {
+  padding: 2px;
+  align-self: center;
+}
+
+.form__input--select {
+}
+
+.form__input--color {
+  height: 50px;
+  border: 1px solid #f5f5f5;
+  border-radius: 50%;
+  padding: 5px;
+  flex-basis: 20%;
+}
