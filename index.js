@@ -79,6 +79,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "linear-gradient( 45deg, #fa8bff 0%, #2bd2ff 52%, #2bff88 90% )";
       form.style.background = "#ff69b4ab";
     }
+
+    window.scrollBy(0, -1000);
   };
 
   const displayParagraph = document.querySelector(".display-paragraph");
