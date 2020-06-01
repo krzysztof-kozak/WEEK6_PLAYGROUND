@@ -9,7 +9,7 @@
     />
     <link rel="stylesheet" href="normalize.css" type="text/css" />
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
     <title>Tydzień 6 - Formularz</title>
   </head>
   <body>
@@ -18,7 +18,7 @@
         Testujemy formularze
       </h1>
 
-      <p class="display-paragraph">
+      <p class="display-paragraph display-paragraph-js">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
         quaerat, veniam illo repellat culpa magnam in molestias natus officia
         error amet? Veritatis consequatur officiis assumenda adipisci atque
@@ -35,7 +35,7 @@
         nulla?
       </p>
 
-      <form class="form" action="https://dev.cotenfrontend.pl" method="GET">
+      <form id="form" class="form">
         <fieldset class="form__section">
           <legend class="form__legend">Wybierz kolor tła oraz ramkę</legend>
           <p class="top-section-wrapper">
@@ -52,15 +52,15 @@
           </p>
 
           <p class="top-section-wrapper">
-            <label class="form__label" for="border">Ramka</label>
+            <label class="form__label form__label--select" for="border">Ramka</label>
             <select
               class="form__input form__input--select"
               name="border"
               id="border"
             >
-              <option value="Border: 1">Czarna, 3px, zaokrląglona</option>
-              <option value="Border: 2">Czerwona, 5px, zaokrląglona</option>
-              <option value="Border: 3">Biała, 7px</option>
+              <option id="border1" value="3px solid black">Czarna, 3px</option>
+              <option id="border2" value="5px solid red">Czerwona, 5px</option>
+              <option id="border3" value="7px solid white">Biała, 7px</option>
             </select>
           </p>
         </fieldset>
@@ -74,8 +74,8 @@
                 class="form__input"
                 type="radio"
                 name="font"
-                id="Bangers"
-                value="'Bangers', cursive"
+                id="bangers"
+                value="'bangers', cursive"
               />
             </p>
 
@@ -96,7 +96,7 @@
                 class="form__input"
                 type="radio"
                 name="font"
-                id="Lobster"
+                id="lobster"
                 value="'Lobster', cursive"
               />
             </p>
@@ -142,7 +142,7 @@
                 class="form__input form__input--special"
                 type="radio"
                 name="font-size"
-                id="font-size-tiny"
+                id="fontSizeSmall"
                 value="0.5rem"
               />
             </p>
@@ -153,8 +153,8 @@
                 class="form__input form__input--special"
                 type="radio"
                 name="font-size"
-                id="font-size-regular"
-                value="3rem"
+                id="fontSizeRegular"
+                value="1rem"
               />
             </p>
 
@@ -164,8 +164,8 @@
                 class="form__input"
                 type="radio"
                 name="font-size"
-                id="font-size-large"
-                value="3em"
+                id="fontSizeLarge"
+                value="1.7rem"
               />
             </p>
           </div>
@@ -178,7 +178,7 @@
               id="lineHeight"
               type="checkbox"
               name="line-height"
-              value="2rem"
+              value="30px"
               class="form__input"
             />
           </p>
@@ -192,7 +192,6 @@
               id="darkmode"
               type="checkbox"
               name="darkmode"
-              value="#000"
               class="form__input"
             />
           </p>
