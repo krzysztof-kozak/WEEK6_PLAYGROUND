@@ -69,10 +69,15 @@ document.addEventListener("DOMContentLoaded", () => {
     displayParagraph.style.fontFamily = paragraphProps.fontFamily;
     displayParagraph.style.fontSize = paragraphProps.fontSize;
     displayParagraph.style.lineHeight = paragraphProps.lineHeight;
+
+    if (paragraphProps.isDarkMode) {
+      body.style.background = "#000000c2";
+    }
   };
 
   const displayParagraph = document.querySelector(".display-paragraph");
   const form = document.querySelector("#form");
+  const body = document.querySelector("body");
 
   const paragraphProps = {
     background: "",
@@ -80,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
     fontFamily: "",
     fontSize: "",
     lineHeight: "",
-    isDarkMode: "",
+    isDarkMode: false,
   };
 
   form.addEventListener("submit", handleSubmit);
