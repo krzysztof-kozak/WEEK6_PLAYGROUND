@@ -67,6 +67,10 @@ p {
   font-family: "Marck Script", cursive;
 }
 
+.font-roboto {
+  font-family: "Roboto Mono", monospace;
+}
+
 .font-small {
   font-size: 0.7rem;
 }
