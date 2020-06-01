@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else if (document.querySelector("#robotoMono").checked) {
       paragraphProps.fontFamily = document.querySelector("#robotoMono").value;
     } else {
-      paragraphProps.fontFamily = "initial";
+      paragraphProps.fontFamily = "'Open Sans', sans-serif;";
     }
 
     if (document.querySelector("#fontSizeSmall").checked) {
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else if (document.querySelector("#fontSizeLarge").checked) {
       paragraphProps.fontSize = document.querySelector("#fontSizeLarge").value;
     } else {
-      paragraphProps.fontSize = "initial";
+      paragraphProps.fontSize = "1rem";
     }
 
     if (document.querySelector("#darkmode").checked) {
@@ -72,6 +72,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (paragraphProps.isDarkMode) {
       body.style.background = "#000000c2";
+      form.style.background = "#721242";
+    } else {
+      body.style.backgroundColor = "#fa8bff";
+      body.style.backgroundImage =
+        "linear-gradient( 45deg, #fa8bff 0%, #2bd2ff 52%, #2bff88 90% )";
+      form.style.background = "#ff69b4ab";
     }
   };
 

@@ -29,7 +29,7 @@ main {
   align-items: center;
   padding: 1em;
   margin: 1em;
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 main:hover {
@@ -139,7 +139,7 @@ p {
 }
 
 .form__label--select {
-  flex-basis: 25%;
+  flex-basis: 24%;
   margin-top: 1em;
 }
 
@@ -159,4 +159,16 @@ p {
   border-radius: 50%;
   padding: 5px;
   flex-basis: 20%;
+}
+
+.form__send-input {
+  font-size: 1.5rem;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 0.2em 0.4em;
+  box-shadow: inset 0px 0px 2px 1px;
+}
+
+.form__send-input:active {
+  background-color: rgba(128, 22, 22, 0.823);
 }
