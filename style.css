@@ -167,8 +167,17 @@ p {
   border-radius: 10px;
   padding: 0.2em 0.4em;
   box-shadow: inset 0px 0px 2px 1px;
+  cursor: pointer;
 }
 
 .form__send-input:active {
   background-color: rgba(128, 22, 22, 0.823);
+}
+
+.scroll-link {
+  text-decoration: none;
+  display: block;
+  margin-top: 0.5em;
+  color: #0027e8;
+  cursor: pointer;
 }
