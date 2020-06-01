@@ -46,6 +46,43 @@ p {
   margin: 0;
 }
 
+/* fonts */
+.font-bangers {
+  font-family: "bangers", cursive;
+}
+
+.font-dancing {
+  font-family: "Dancing Script", cursive;
+}
+
+.font-lobster {
+  font-family: "Lobster", cursive;
+}
+
+.font-monstserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.font-marck {
+  font-family: "Marck Script", cursive;
+}
+
+.font-small {
+  font-size: 0.7rem;
+}
+
+.font-regular {
+  font-size: 1rem;
+}
+
+.font-large {
+  font-size: 1.7rem;
+}
+
+.line-height {
+  line-height: 30px;
+}
+
 /* header */
 .page-header {
   text-align: center;
