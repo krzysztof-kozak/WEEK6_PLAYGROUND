@@ -213,3 +213,17 @@ p {
 .form__send-input:active {
   background-color: rgba(128, 22, 22, 0.823);
 }
+
+@media (max-width: 375px) {
+  .form__input--color {
+    flex-basis: 26%;
+  }
+
+  .form__label {
+    flex-basis: 66%;
+  }
+
+  .form__label--color {
+    flex-basis: 58%;
+  }
+}
