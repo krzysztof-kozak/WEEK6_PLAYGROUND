@@ -78,6 +78,10 @@ document.addEventListener('DOMContentLoaded', () => {
       body.style.backgroundColor = '#fa8bff';
       body.style.backgroundImage = 'linear-gradient( 45deg, #fa8bff 0%, #2bd2ff 52%, #2bff88 90% )';
       form.style.background = '#ff69b4ab';
+      pageHeader.style.color = '#000000';
+      formLegend.forEach((node) => (node.style.color = '#000000'));
+      formLabel.forEach((node) => (node.style.color = '#000000'));
+      sectionWrapper.forEach((node) => (node.style.backgroundColor = '#f0ffff'));
     }
 
     window.scrollBy(0, -1000);
